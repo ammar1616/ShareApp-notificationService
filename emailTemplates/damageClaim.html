@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage Claim Notification</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #FF5733;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Damage Claim Notification</h2>
+        </div>
+        <div class="content">
+            <p>Hello {{borrowerName}},</p>
+            <p>We regret to inform you that a damage claim has been raised regarding the {{itemName}} you returned by {{lenderName}}.</p>
+            <p>Kindly reach out to us at your earliest convenience to resolve this matter.</p>
+            <p>Thank you for your attention to this issue!</p>
+        </div>
+        <div class="footer">
+            <p>This is an automated message. Please do not reply.</p>
+        </div>
+    </div>
+</body>
+</html>
